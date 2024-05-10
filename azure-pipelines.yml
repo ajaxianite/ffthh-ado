@@ -3,6 +3,14 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+variables:
+- name: storageAccount
+  value: ffthhstorageamj
+- name: storageContainer
+  value: $web
+- name: subscriptionName
+  value: AzureServiceConnection
+
 trigger:
 - azure-pipelines-amj
 
